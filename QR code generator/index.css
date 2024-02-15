@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   height: 100vh;
+}
+.qr-container{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 0 10px 0;
+    background-color: white;
+}
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#qr-input{
+   display: block;
+   margin-bottom: 10px;
+   width: 100%;
+   font-size: 16px;
+   padding: 10px;
+}
+
+#qr-button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 1.2rem;
+    background-color: green;
+    color: white;
+    margin-bottom: 10px;
+}
+#qr-img{
+    display: block;
+    width: 50%;
+margin: 0 auto;
+}
