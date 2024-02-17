@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button class="color-button" data-color="red">RED</button>
+    <button class="color-button" data-color="green">GREEN</button>
+    <button class="color-button" data-color="black">BLACK</button>
+    <button class="color-button" data-color="yellow">YELLOW</button>
+    <button class="color-button" data-color="brown">BROWN</button>
+
+
+    <script>
+
+
+        document.querySelectorAll('.color-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const color = button.getAttribute('data-color');
+                document.body.style.backgroundColor = color;
+            });
+        });
+
+    </script>
+</body>
+
+</html>
