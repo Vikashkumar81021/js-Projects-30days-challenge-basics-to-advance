@@ -18,9 +18,7 @@
 
 
     <script>
-
-
-        document.querySelectorAll('.color-button').forEach(button => {
+            document.querySelectorAll('.color-button').forEach(button => {
             button.addEventListener('click', () => {
                 const color = button.getAttribute('data-color');
                 document.body.style.backgroundColor = color;
