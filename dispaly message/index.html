@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display message</title>
+</head>
+
+<body>
+    <h1>Write a message </h1>
+    <input type="text" id="input">
+    <button onclick="submit()">submit</button>
+    <p id="message"></p>
+
+    <script>
+        let text = document.getElementById('input')
+        let msg = document.getElementById('message')
+        const submit = () => {
+            let type = text.value;
+            msg.textContent += type + ""
+            text.value = ""
+        }
+
+
+    </script>
+</body>
+
+</html>
